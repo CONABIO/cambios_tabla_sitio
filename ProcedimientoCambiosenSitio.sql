@@ -27,8 +27,8 @@ p.fechaactualizacion=current_timestamp;
 update snibdtap.po_ejemplarsitio
 set llavesitio_new = MD5(concat(
 ifnull(idregionoriginal,'n'),
-ifnull(latitudgrados,'n'), 
-ifnull(latitudminutos,'n'), 
+ifnull(latitudgrados,'n'),
+ifnull(latitudminutos,'n'),
 ifnull(latitudsegundos,'n'),
 ifnull(longitudgrados,'n'),
 ifnull(longitudminutos,'n'),
@@ -40,10 +40,10 @@ ifnull(longitudgradosfinal,'n'),
 ifnull(longitudminutosfinal,'n'),
 ifnull(longitudsegundosfinal,'n'),
 fuentemapagacetlitetiq, geoposmapagacetlitetiq, precisionoescala,
-ifnull(radio,'n'), 
+ifnull(radio,'n'),
 ifnull(altitudinicialdelsitio,'n'),
 ifnull(altitudfinaldelsitio,'n'),
-datum,tipositio,nortesur,esteoeste,ifnull(coordenadaoriginal,'n'),utm_longitud,utm_latitud,utm_zona));
+datum,tipositio,nortesur,esteoeste,ifnull(coordenadaoriginal,'n'),utm_longitud,utm_latitud,utm_zona,utm_longitudfinal,utm_latitudfinal,utm_zonafinal));
 
 /*Verificar que lo que vamos a agregar no existe enla tabla sitio*/
 
